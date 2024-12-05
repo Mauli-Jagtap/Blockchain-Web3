@@ -1,28 +1,39 @@
-REMIX DEFAULT WORKSPACE
+# Blockchain DeFi Smart Contract Prototype
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+This repository showcases a Blockchain DeFi Smart Contract Prototype developed using Solidity. The project includes functionality for stake/unstake tokens, demonstrating key features of decentralized finance (DeFi) applications.
 
-This workspace contains 3 directories:
+# Key Features:
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+# 1. Stake/Unstake Tokens
+   - Users can stake tokens into the smart contract and earn rewards.
+   - Users can unstake tokens, allowing them to withdraw their funds from the contract.
+   - The system includes simple staking logic with basic rewards.
 
-SCRIPTS
+# 2. Lending/Borrowing System
+   - Users can deposit tokens as collateral and borrow other tokens.
+   - The system includes basic logic for loan issuance, repayment, and collateral withdrawal.
+   - Simple DeFi logic with clear functions for deposits, loans, and repayments.
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+# 3. ERC-20 Token Creation
+   - ERC-20 token creation with minting and burning functionality.
+   - Mint new tokens and burn tokens to reduce the supply.
+   - Capped total supply ensures a fixed number of tokens in circulation.
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+# Next Steps:
+- Staking/Unstaking: Future improvements could include adding rewards for staking, staking periods, and interest calculations.
+- Lending/Borrowing: Add features like interest rates, multiple collateral types, and liquidity pool integration.
+- ERC-20 Token: Explore decentralized exchanges (DEXs) for listing, trading, or implementing staking rewards.
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+# Technologies Used:
+- Solidity: Smart contract development language.
+- Ethereum Blockchain: The decentralized network where the contract is deployed.
+- Remix IDE: The integrated development environment used for compiling, testing, and deploying the smart contract.
+- MetaMask (Optional): A browser extension for interacting with the Ethereum network and managing wallet transactions.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+# How to Use:
+1. Install MetaMask (or another Ethereum wallet) and configure.
+2. Deploy the contract via Remix IDE or interact with an existing deployed contract through Remix or any compatible front-end interface.
+3. Test the staking/unstaking system, lending/borrowing features, and ERC-20 token functions.
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+# Contributions:
+Feel free to contribute to this project by suggesting features, reporting bugs, or improving the code. Contributions are always welcome!
